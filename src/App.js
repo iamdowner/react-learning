@@ -7,7 +7,6 @@ class Volume extends React.Component {
       <div className="app">
         <div className="header"></div>
         <Stats />
-        {/* <div className="bg"></div> */}
       </div>
     );
   }

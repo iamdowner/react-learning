@@ -14,12 +14,13 @@ function Stats() {
         setStats(new_stats)
         setLoading(false);
     }
-    function StatText(class_name, text, stat, type) {
+    function StatText(class_name, text, stat, type, third) {
         if (loading) {
             return <div className={class_name} > loading... </div>;
         } else {
+            let adress = third ? bot_stats[stat][type][third] : bot_stats[stat][type]
             return <div className={class_name} >
-                <div className="numbers"> {bot_stats[stat][type]}</div>
+                <div className="numbers"> {adress}</div>
                 <div className="text">{text}</div>
             </div>;
         }
@@ -37,12 +38,21 @@ function Stats() {
     return (
         <div className="box" >
             <div className="first-row">
-                <div className="sliced-circle">
+                <div className="some-cool-named-box">
+                    
+                    
+                    
+                    <div className="sliced-circle">
                     {StatText("main-stat", "messages sent today", "messages_today", "string")}
+                    </div>
+                    {StatText("last-manga", "last saved manga", "last_manga", "manga", "id")}
                 </div>
                 <div className="otherStats">
+                    {StatText("today-doujins", "new doujins today", "manga_today", "string")}
+
                     {StatText("total-doujins", "total doujins", "users_total", "string")}
                     {StatText("total-users", "total users", "manga_total", "string")}
+
                     {StatText("total-messages", "total messages sent", "messages_total", "string")}
                 </div>
             </div>
