@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './Volume.css';
-import Volume from './Volume'
+import './App.css';
+import App from './App'
 
 
 ReactDOM.render(
-  <Volume />,
+  <App />,
   document.getElementById('root')
 );
