@@ -39,11 +39,8 @@ function Stats() {
         <div className="box" >
             <div className="first-row">
                 <div className="some-cool-named-box">
-                    
-                    
-                    
                     <div className="sliced-circle">
-                    {StatText("main-stat", "messages sent today", "messages_today", "string")}
+                        {StatText("main-stat", "messages sent today", "messages_today", "string")}
                     </div>
                     {StatText("last-manga", "last saved manga", "last_manga", "manga", "id")}
                 </div>
@@ -56,9 +53,6 @@ function Stats() {
                     {StatText("total-messages", "total messages sent", "messages_total", "string")}
                 </div>
             </div>
-            {/* <button className="buttons" onClick={updateStats} >
-                Update stats
-            </button> */}
         </div>
     );
 };
