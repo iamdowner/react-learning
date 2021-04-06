@@ -47,8 +47,8 @@ function Stats() {
                 <div className="otherStats">
                     {StatText("today-doujins", "new doujins today", "manga_today", "string")}
 
-                    {StatText("total-doujins", "total doujins", "users_total", "string")}
-                    {StatText("total-users", "total users", "manga_total", "string")}
+                    {StatText("total-doujins", "total doujins", "manga_total", "string")}
+                    {StatText("total-users", "total users", "users_total", "string")}
 
                     {StatText("total-messages", "total messages sent", "messages_total", "string")}
                 </div>
